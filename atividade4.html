@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>Atividade em JavaScript</h1>
+    
+    <script>
+
+        //ipi é imposto
+        let ipi = Number(prompt("Digite o IPI (%):"))
+
+        let valor1 = Number(prompt("Valor da peça 1:"))
+        let quant1 = Number(prompt("Quantidade da peça 1:"))
+
+        let valor2 = Number(prompt("Valor da peça 2:"))
+        let quant2 = Number(prompt("Quantidade da peça 2:"))
+
+        let totalSemImposto = (valor1 * quant1) + (valor2 * quant2)
+        
+        //+1 pq e o total incluindo o imposto
+        let fator = (ipi / 100) + 1;
+
+        let totalFinal = totalSemImposto * fator;
+
+        document.write("Valor total: " + totalFinal);
+
+    </script>
+
+</body>
+</html>
