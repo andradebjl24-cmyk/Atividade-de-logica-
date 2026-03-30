@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>CEF</h1>
+
+    <script>
+    
+    let saldo = parseFloat(prompt("Digite seu saldo médio:"))
+    let credito;
+
+    if(saldo <= 500){
+    credito = saldo * 0.1;
+    } 
+    else if(saldo <= 1000){
+    credito = saldo * 0.2;
+    }
+    else if(saldo <= 3000){
+    credito = saldo * 0.2;
+    } 
+    else if(saldo <= 3001){
+    credito = saldo * 0.2;
+    }  
+    else{
+    credito = saldo * 0.3;
+    }
+
+    // juros de 2%
+    credito = credito * 1.02;
+    
+    document.write("Saldo médio: R$ " + saldo.toFixed(2))
+    document.write("<br>Crédito: R$ " + credito.toFixed(2))
+        
+    </script>
+    
+</body>
+</html>

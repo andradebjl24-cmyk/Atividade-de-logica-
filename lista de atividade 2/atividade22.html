@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>que leia 20 números e, ao final, escreva quantos estão entre 0 e 100</h1>
+
+    <script>
+
+        let quantidade = 0
+
+        for (let n = 1; n <= 20; n++) {
+        let numero = parseFloat(prompt("Digite um número:"))
+
+        if (numero >= 0 && numero <= 100) {
+        quantidade++
+        }
+        }
+
+        document.write("Entre 0 e 100: " + quantidade)
+
+    </script>
+    
+</body>
+</html>

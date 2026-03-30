@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>Dados três valores A, B e C</h1>
+
+    <script>
+        let A = parseFloat(prompt("Digite A:"));
+        let B = parseFloat(prompt("Digite B:"));
+        let C = parseFloat(prompt("Digite C:"));
+
+        if (A >= B && A >= C) {
+        if (B >= C) {
+        document.write(A + ", " + B + ", " + C);
+        } else {
+        document.write(A + ", " + C + ", " + B);
+        }
+        } 
+
+        else if (B >= A && B >= C) {
+        if (A >= C) {
+        document.write(B + ", " + A + ", " + C);
+        } else {
+        document.write(B + ", " + C + ", " + A);
+        }
+        }
+
+        else {
+        if (A >= B) {
+        document.write(C + ", " + A + ", " + B);
+        } else {
+        document.write(C + ", " + B + ", " + A);
+        }
+        }
+        
+    </script>
+    
+</body>
+</html>

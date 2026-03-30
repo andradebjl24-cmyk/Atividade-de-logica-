@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>- Escrever um programa que leia o nome de um vendedor, <br>
+        o seu salário fixo e o total de vendas efetuadas por ele no mês</h1>
+
+    <script>
+
+        let nome = prompt("Digite o nome do vendedor:")
+        let salario = parseFloat(prompt("Digite o salário fixo:"))
+        let vendas = parseFloat(prompt("Digite o total de vendas:"))
+
+        let comissao = vendas * 0.15
+        let salarioFinal = salario + comissao
+
+        document.write("<br>Nome: " + nome)
+        document.write("<br>Salário: R$ " + salario.toFixed(2))
+        document.write("<br>Salário final: R$ " + salarioFinal.toFixed(2))
+
+    </script>
+    
+</body>
+</html>

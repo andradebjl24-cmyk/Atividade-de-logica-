@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit</h1>
+
+    <script>
+
+        let celsius = parseFloat(prompt("Digite a temperatura em Celsius:"))
+
+                       //a fórmula
+        let fahrenheit = (9 * celsius + 160) / 5
+
+        document.write("<br>Temperatura em Celsius: " + celsius)
+        document.write("<br>Temperatura em Fahrenheit: " + fahrenheit.toFixed(2))
+
+    </script>
+    
+</body>
+</html>

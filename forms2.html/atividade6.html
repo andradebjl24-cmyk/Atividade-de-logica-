@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repita comigo</title>
+</head>
+<body>
+
+    <h1>atividade 6</h1>
+
+    <script>
+
+        let aprovados = 0
+        let resposta
+
+        do {
+        let n1 = Number(prompt("Nota 1:"))
+        let n2 = Number(prompt("Nota 2:"))
+
+        let media = (n1 + n2) / 2;
+
+        if(media >= 9.5){
+           aprovados++;
+        }
+
+        resposta = prompt("Calcular outro aluno?")
+
+        } while(resposta == "S" || resposta == "s")
+
+        document.write("Aprovados: " + aprovados);[]
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+    
+    <h1>leia a idade de uma pessoa e informe a sua classe eleitoral</h1>
+
+    <script>
+         
+        let idade = parseInt(prompt("Digite sua idade:"))
+        let classe;
+
+        if (idade < 16) {
+        classe = "Não eleitor"
+        } 
+        else if (idade >= 16 && idade < 18) {
+        classe = "Eleitor facultativo"
+        } 
+        else if (idade >= 65) {
+        classe = "Eleitor facultativo"
+        } 
+        else {
+        classe = "Eleitor obrigatório"
+        }
+
+        document.write("Classificação: " + classe)
+
+    </script>
+
+</body>
+</html>

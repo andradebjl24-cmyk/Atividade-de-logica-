@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>Quantidade total de calorias de uma refeição </h1>
+
+    <script>
+        
+        let prato = parseInt(prompt(
+        "Escolha o prato: \n1"
+        + "Vegetariano \n2"
+        + "Peixe \n3" 
+        + "Frango \n4"
+        + "Carne"
+        ))
+
+        let sobremesa = parseInt(prompt(
+        "Escolha a sobremesa: \n1"
+        +"Abacaxi \n2"
+        +"Sorvete diet \n3"
+        +" Mousse diet \n4" 
+        +"Mousse chocolate"
+        ))
+
+       let bebidas = parseInt(prompt(
+       "Escolha a bebida: \n1"
+       +"Chá \n2"
+       +"Suco de laranja \n3"
+       +"Suco de melão \n4"
+       +"Refrigerante diet"
+       ))
+
+       let calorias = 0;
+
+
+       //quando for somar só põe o número não coloque texto
+       //quando for número sem aspas
+
+        switch(prato.toLocaleString()){
+        case 1: calorias += 180;
+        break;
+        case 2: calorias += 230;
+        break;
+        case 3: calorias += 250;
+        break;
+        case 4: calorias += 350;
+        break;
+        }
+
+        switch(sobremesa){
+        case 1: calorias += 75;
+        break;
+        case 2: calorias += 110;
+        break;
+        case 3: calorias += 170;
+        break;
+        case 4: calorias += 200;
+        break;
+        
+        }
+
+        switch(bebidas){
+        case 1: calorias += 20;
+        break;
+        case 2: calorias += 70;
+        break;
+        case 3: calorias += 100;
+        break;
+        case 4: calorias += 65;
+        break;
+        }
+
+        document.write("Total de calorias: " + calorias)
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>Elaborar um programa que efetue a apresentação do valor da conversão em real (R$).<br>
+        de um valor lido em dólar </h1>
+
+    <script>
+
+        let valor = Number(prompt("Cotação do dólar:"))
+        let dolares = Number(prompt("Quantidade em dólar:"))
+
+        let reais = dolares * valor
+
+        document.write("Valor em reais: R$ " + reais.toFixed(2))
+
+    </script>
+    
+</body>
+</html>

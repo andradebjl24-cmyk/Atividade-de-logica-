@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova</h1>
+
+    <script>
+
+        let nomeNovo = ""
+        let menorIdade = 999
+
+        for (let v = 1; v <= 10; v++) {
+        let nome = prompt("Digite o nome:")
+        let idade = parseInt(prompt("Digite a idade:"))
+
+        if (idade < menorIdade) {
+        menorIdade = idade
+        nomeNovo = nome
+        }
+        }
+        
+        document.write("Pessoa mais nova: " + nomeNovo)
+
+    </script>
+    
+</body>
+</html>

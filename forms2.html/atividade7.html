@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repita comigo</title>
+</head>
+<body>
+
+    <h1>atividade 7</h1>
+
+    <script>
+
+        let soma = 0
+        let i = 1
+
+        while(i <= 6){
+        let nota = Number(prompt("digite a nota:"))
+
+        if(nota >= 0 && nota <= 10){
+           soma += nota;
+           i++;
+        } else {
+        alert("nota inválida")
+        }
+        }
+
+        document.write("Média: " + (soma / 6))
+
+    </script>
+    
+</body>
+</html>
