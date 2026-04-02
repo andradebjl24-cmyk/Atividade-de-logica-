@@ -104,8 +104,7 @@ function reservarQuarto() {
     }
 }
 
-//////////////////////////////////////////////////
-// 2
+
 function cadastroHospedes() {
     let valor = parseFloat(prompt("Qual o valor padrão da diária?"));
     let gratuidade = 0;
@@ -135,8 +134,7 @@ function cadastroHospedes() {
     "; " + gratuidade + " gratuidade(s); " + meia + " meia(s)");
 }
 
-//////////////////////////////////////////////////
-// 3
+
 let lista = [];
 
 function cadastrarPesquisar() {
@@ -169,8 +167,7 @@ function cadastrarPesquisar() {
     } while(opcao != 3);
 }
 
-//////////////////////////////////////////////////
-// 4
+
 function eventoGarcom() {
     let horas = parseInt(prompt("Qual a duração do evento em horas?"));
     let garcons = parseInt(prompt("Quantos garçons serão necessários?"));
@@ -187,8 +184,7 @@ function eventoGarcom() {
     }
 }
 
-//////////////////////////////////////////////////
-// 5
+
 function buffet() {
     let pessoas = parseInt(prompt("Qual o número de convidados para o evento?"));
 
@@ -215,8 +211,7 @@ function buffet() {
     }
 }
 
-//////////////////////////////////////////////////
-// 6
+
 function auditorio() {
     let convidados = parseInt(prompt("Qual o número de convidados para o seu evento?"));
 
@@ -243,8 +238,7 @@ function auditorio() {
     }
 }
 
-//////////////////////////////////////////////////
-// 7
+
 function restaurante() {
     let dia = prompt("Qual o dia do evento?");
     let hora = parseInt(prompt("Qual a hora do evento?"));
@@ -260,8 +254,7 @@ function restaurante() {
     }
 }
 
-//////////////////////////////////////////////////
-// 8
+
 function combustivel() {
     let a1 = parseFloat(prompt("Álcool Wayne Oil:"));
     let g1 = parseFloat(prompt("Gasolina Wayne Oil:"));
@@ -278,8 +271,8 @@ function combustivel() {
     }
 }
 
-//////////////////////////////////////////////////
-// 9
+
+
 function manutencao() {
     let menor = Infinity;
     let melhor = "";
