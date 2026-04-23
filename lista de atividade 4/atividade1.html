@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>01 Faça um programa que leia 5 números inteiros e exiba-os na ordem inversa em que foram digitados</h1>
+
+    <script>
+        
+       let numeros = []
+
+       // ler 5 números
+       for (let i = 0; i < 5; i++){
+       let valor = parseInt(prompt("Digite o número:"));
+       numeros[i] = valor;
+       }
+
+       let inverso = [...numeros]; // outra cópia
+       
+       inverso.reverse();
+       document.write("Ordem inversa: " + inverso);
+
+
+    </script>
+    
+</body>
+</html>

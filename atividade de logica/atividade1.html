@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício</title>
+</head>
+<body>
+    <script>
+        let numeros = []
+
+        for (let i = 0; i < 9; i++) {
+            let valor = Number(prompt("Digite o número " + (i + 1) + ":"))
+            numeros.push(valor)
+        }
+
+        let x = Number(prompt("Digite o valor de X: "))
+
+        let count = 0
+        let indices = []
+
+        for (let i = 0; i < numeros.length; i++){
+            if (numeros[i] === x) {
+                count++
+                indices.push(i)
+            }
+        }
+
+        if (count > 0){
+            alert(
+                "O valor " + x + " aparece " + count + " vezes" + "Índices: " + indices.join(", "))
+        } else {
+            alert("O valor " + x + " não foi encontrado.")
+        }
+    </script>
+</body>
+</html>

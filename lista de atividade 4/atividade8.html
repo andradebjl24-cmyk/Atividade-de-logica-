@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de logica</title>
+</head>
+<body>
+
+    <h1>08 Escreva um programa que leia 5 números inteiros e calcule a média dos valores pares e a média dos valores ímpares.</h1>
+
+    <script>
+
+        let numeros = [];
+
+        for (let i = 0; i < 5; i++){
+        numeros.push(parseInt(prompt("Digite um número:")));
+        }
+
+        let somaPar = 0, contPar = 0;
+        let somaImpar = 0, contImpar = 0;
+
+        for (let num of numeros){
+        if (num % 2 === 0) {
+        somaPar += num;
+        contPar++;
+        } else {
+        somaImpar += num;
+        contImpar++;
+        }
+        }
+
+        document.write("Média pares: " + (contPar ? somaPar / contPar : 0) + "<br>");
+        document.write("Média ímpares: " + (contImpar ? somaImpar / contImpar : 0));
+
+    </script>
+    
+</body>
+</html>
